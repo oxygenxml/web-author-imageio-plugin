@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plugin SYSTEM "../plugin.dtd">
+
+<plugin
+    id="com.oxygenxml.imageio.plugin.ImageIOPlugin"
+    name="Web Author ImageIO Plugin"
+    description="Provides support for rendering image formats unsupported by the browsers."
+    version="${project.nosnapshot.version}"
+    vendor="SyncRO"
+    class="com.oxygenxml.imageio.plugin.ImageIOPlugin">
+    <runtime>
+      <librariesFolder name="lib"/>
+      <librariesFolder name="target/lib"/>
+      <library name="target/classes"/>
+    </runtime>
+
+    <extension type="WorkspaceAccess" 
+      class="com.oxygenxml.imageio.workspace.ImageIOWorkspaceAccess"/>
+
+</plugin>
