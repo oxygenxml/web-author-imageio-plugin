@@ -10,7 +10,10 @@
     class="com.oxygenxml.imageio.plugin.ImageIOPlugin">
     <runtime>
       <librariesFolder name="lib"/>
+      <librariesFolder scope="global" name="global"/>
+      
       <librariesFolder name="target/lib"/>
+      <librariesFolder scope="global" name="target/global"/>
       <library name="target/classes"/>
     </runtime>
 
