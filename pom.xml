@@ -4,7 +4,7 @@
   
   <groupId>com.oxygenxml</groupId>
   <artifactId>web-author-imageio-plugin</artifactId>
-  <version>19.1-SNAPSHOT</version>
+  <version>20.0-SNAPSHOT</version>
   
   <properties>
     <monkeys.version>3.3.2</monkeys.version>
