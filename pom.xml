@@ -3,8 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>com.oxygenxml</groupId>
-  <artifactId>web-author-imageio-plugin</artifactId>
   <version>20.0-SNAPSHOT</version>
+  <artifactId>web-author-imageio-plugin</artifactId>
+  <name>Web Author ImageIO Plugin</name>
+  <description>Web Author plugin for rendering images no supported natively by web browsers</description>
   
   <properties>
     <monkeys.version>3.3.2</monkeys.version>
