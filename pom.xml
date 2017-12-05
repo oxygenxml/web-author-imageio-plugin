@@ -154,12 +154,6 @@
       <artifactId>imageio-iff</artifactId>
       <version>${monkeys.version}</version>
     </dependency>
-  
-    <dependency>
-      <groupId>com.twelvemonkeys.imageio</groupId>
-      <artifactId>imageio-icns</artifactId>
-      <version>${monkeys.version}</version>
-    </dependency>
     <dependency>
       <groupId>com.twelvemonkeys.imageio</groupId>
       <artifactId>imageio-hdr</artifactId>
