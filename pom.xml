@@ -136,11 +136,6 @@
     </dependency>
     <dependency>
       <groupId>com.twelvemonkeys.imageio</groupId>
-      <artifactId>imageio-pict</artifactId>
-      <version>${monkeys.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.twelvemonkeys.imageio</groupId>
       <artifactId>imageio-pdf</artifactId>
       <version>${monkeys.version}</version>
     </dependency>
