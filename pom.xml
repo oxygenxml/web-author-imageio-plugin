@@ -4,7 +4,7 @@
 
   <parent>
     <groupId>com.oxygenxml</groupId>
-    <artifactId>oxygen-superpom-standard</artifactId>
+    <artifactId>oxygen-plugins-superpom</artifactId>
     <version>20.0-SNAPSHOT</version>
   </parent>  
   <artifactId>web-author-imageio-plugin</artifactId>
@@ -16,21 +16,14 @@
   </properties>
 
   <build>
-    <finalName>${project.artifactId}-${project.nosnapshot.version}</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
           <!-- loaded in the plugin classloader -->
           <execution>
-            <id>image-io</id>
-            <phase>generate-resources</phase>
-            <goals>
-              <goal>copy-dependencies</goal>
-            </goals>
+            <id>download-deps</id>
             <configuration>
-              <outputDirectory>${project.build.directory}/lib</outputDirectory>
-              <includeScope>runtime</includeScope>
               <excludeGroupIds>org.apache.pdfbox</excludeGroupIds>
             </configuration>
           </execution>
@@ -44,35 +37,6 @@
             <configuration>
               <outputDirectory>${project.build.directory}/global</outputDirectory>
               <includeGroupIds>org.apache.pdfbox</includeGroupIds>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <configuration>
-          <!-- We only want the final JAR package in the target folder so that 
-          it's easier for users to identify it.-->
-          <outputDirectory>${project.build.directory}/build</outputDirectory>
-        </configuration>
-      </plugin>
-            <!-- remove the -SNAPSHOT from packaged plugin -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>build-helper-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>set-version-no-snapshot</id>
-            <goals>
-              <goal>regex-property</goal>
-            </goals>
-            <configuration>
-              <name>project.nosnapshot.version</name>
-              <value>${project.version}</value>
-              <regex>-SNAPSHOT</regex>
-              <replacement></replacement>
-              <failIfNoMatch>false</failIfNoMatch>
             </configuration>
           </execution>
         </executions>
@@ -173,23 +137,6 @@
       <groupId>com.twelvemonkeys.imageio</groupId>
       <artifactId>imageio-batik</artifactId>
       <version>${monkeys.version}</version>
-    </dependency>
-
-    <dependency>
-       <groupId>com.oxygenxml</groupId>
-       <artifactId>oxygen-sdk</artifactId>
-       <version>${project.version}</version>
-       <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <scope>provided</scope>
     </dependency>
   </dependencies>
   
