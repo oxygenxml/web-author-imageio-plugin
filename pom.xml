@@ -69,9 +69,9 @@
         <version>2.0.7</version>
     </dependency>
     <dependency>
-      <groupId>com.twelvemonkeys.imageio</groupId>
-      <artifactId>imageio-tiff</artifactId>
-      <version>${monkeys.version}</version> <!-- Alternatively, build your own version -->
+        <groupId>com.oxygenxml</groupId>
+        <artifactId>oxygen-jai-tiff</artifactId>
+        <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>com.twelvemonkeys.imageio</groupId>

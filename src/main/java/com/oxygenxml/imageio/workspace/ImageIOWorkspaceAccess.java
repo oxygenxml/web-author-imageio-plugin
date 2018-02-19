@@ -7,7 +7,6 @@ import ro.sync.exml.workspace.api.standalone.StandalonePluginWorkspace;
 
 public class ImageIOWorkspaceAccess  implements WorkspaceAccessPluginExtension {
 
-  @Override
   public void applicationStarted(StandalonePluginWorkspace pluginWorkspaceAccess) {
     Thread currentThread = Thread.currentThread();
     ClassLoader contextClassLoader = currentThread.getContextClassLoader();
@@ -19,7 +18,6 @@ public class ImageIOWorkspaceAccess  implements WorkspaceAccessPluginExtension {
     }
   }
 
-  @Override
   public boolean applicationClosing() {
     return false;
   }
