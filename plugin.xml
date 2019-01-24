@@ -6,7 +6,7 @@
     name="Web Author ImageIO Plugin"
     description="Provides support for rendering image formats unsupported by the browsers."
     version="${project.nosnapshot.version}"
-    vendor="SyncRO"
+    vendor="Syncro Soft SRL"
     class="com.oxygenxml.imageio.plugin.ImageIOPlugin">
     <runtime>
       <librariesFolder name="lib"/>
