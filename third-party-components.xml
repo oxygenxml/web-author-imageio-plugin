@@ -43,9 +43,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="org.apache.pdfbox:fontbox:2.0.12" draft="false" product="webapp">
+    <component id="org.apache.pdfbox:fontbox:2.0.16" draft="false" product="webapp">
         <name>Apache FontBox</name>
-        <version>2.0.12</version>
+        <version>2.0.16</version>
         <project-info>
             <about>The Apache FontBox library is an open source Java tool to obtain low level information
     from font files. FontBox is a subproject of Apache PDFBox.</about>
