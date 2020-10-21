@@ -11,6 +11,16 @@
   <name>Web Author ImageIO Plugin</name>
   <description>Web Author plugin for rendering images no supported natively by web browsers</description>
   
+  <developers>
+    <developer>
+      <name>Mihai Coanda</name>
+      <email>mihai_coanda@sync.ro</email>
+      <roles>
+        <role>manager</role>
+      </roles>
+    </developer>
+  </developers>
+
   <properties>
     <monkeys.version>3.3.2</monkeys.version>
   </properties>
