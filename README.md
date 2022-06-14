@@ -4,7 +4,7 @@ This plugin ads images rendering capabilities to the WebAuthor for formats as ps
 
 It is worth highlighting the rendering of pdf files as images.
 
-Download plugin [from here](./../../releases)
+Download plugin [from here](https://www.oxygenxml.com/maven/com/oxygenxml/web-author-imageio-plugin/)
 
 Copyright and License
 ---------------------
