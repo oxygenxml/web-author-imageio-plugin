@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <third-party>
-    <component id="com.twelvemonkeys.common:common-image:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.common:common-image:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: Common :: Image</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>The TwelveMonkeys Common Image support</about>
             <licensor></licensor>
@@ -42,9 +42,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.common:common-io:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.common:common-io:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: Common :: IO</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>The TwelveMonkeys Common IO support</about>
             <licensor></licensor>
@@ -84,9 +84,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.common:common-lang:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.common:common-lang:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: Common :: Language support</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>The TwelveMonkeys Common Language support</about>
             <licensor></licensor>
@@ -126,9 +126,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-batik:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-batik:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: Batik Plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO wrapper for the Batik SVG Toolkit, enabling Scalable Vector Graphics (SVG) support.
         See the &lt;a href="http://xmlgraphics.apache.org/batik/"&gt;Batik Home page&lt;/a&gt;
@@ -170,9 +170,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-bmp:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-bmp:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: BMP plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Microsoft Device Independent Bitmap (BMP/DIB) format.</about>
             <licensor></licensor>
@@ -212,9 +212,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-clippath:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-clippath:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: Photoshop Path Support</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>Photoshop Clipping Path Support.</about>
             <licensor></licensor>
@@ -254,9 +254,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-core:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-core:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: Core</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>Sonatype helps open source projects to set up Maven repositories on https://oss.sonatype.org/</about>
             <licensor></licensor>
@@ -296,9 +296,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-hdr:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-hdr:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: HDR plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Radiance RGBE High Dynaimc Range format (HDR).</about>
             <licensor></licensor>
@@ -338,9 +338,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-iff:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-iff:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: IFF plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Amiga/Electronic Arts Interchange Filed Format (IFF)
         type ILBM and PBM format.</about>
@@ -381,9 +381,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-jpeg:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-jpeg:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: JPEG plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Joint Photographer Expert Group images (JPEG/JFIF).</about>
             <licensor></licensor>
@@ -423,9 +423,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-metadata:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-metadata:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: Metadata</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO metadata module.</about>
             <licensor></licensor>
@@ -465,9 +465,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-pcx:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-pcx:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: PCX plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for ZSoft Paintbrush Format (PCX)</about>
             <licensor></licensor>
@@ -507,9 +507,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-pdf:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-pdf:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: PDF plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Adobe Portable Document Format (PDF).</about>
             <licensor></licensor>
@@ -549,9 +549,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-pnm:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-pnm:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: PNM plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for NetPBM Portable Any Map (PNM)</about>
             <licensor></licensor>
@@ -591,9 +591,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-psd:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-psd:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: PSD plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Adobe Photoshop Document (PSD).</about>
             <licensor></licensor>
@@ -633,9 +633,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-sgi:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-sgi:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: SGI plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Silicon Graphics Image Format (SGI)</about>
             <licensor></licensor>
@@ -675,9 +675,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-tga:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-tga:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: TGA plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Truevision TGA Image Format (TGA)</about>
             <licensor></licensor>
@@ -717,9 +717,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</content>
             <url>https://github.com/haraldk/TwelveMonkeys#license</url>
         </license>
     </component>
-    <component id="com.twelvemonkeys.imageio:imageio-thumbsdb:3.3.2" draft="false" product="webapp">
+    <component id="com.twelvemonkeys.imageio:imageio-thumbsdb:3.8.2" draft="false" product="webapp">
         <name>TwelveMonkeys :: ImageIO :: Thumbs.db plugin</name>
-        <version>3.3.2</version>
+        <version>3.8.2</version>
         <project-info>
             <about>ImageIO plugin for Windows Thumbs DB (Thumbs.db) format.</about>
             <licensor></licensor>
