@@ -1,6 +1,6 @@
 # web-author-imageio-plugin
 
-This plugin ads images rendering capabilities to the WebAuthor for these formats: psd cur tiff pic rgbe tga tif sgi xyze ico ham8 ham pgm dcx pam pict ilbm pct tpic pcx iff rle ppm icns lbm pfm hdr pbm db pdf wmf cgm.
+This plugin ads images rendering capabilities to the WebAuthor for these formats: cgm, cur, db, dcx, ham, ham8, hdr, icns, ico, iff, ilbm, lbm, pam, pbm, pct, pcx, pdf, pfm, pgm, pic, pict, ppm, psd, rgbe, rle, sgi, tga, tif, tiff, tpic, wmf, xyze.
 
 It is worth highlighting the rendering of pdf files as images.
 
