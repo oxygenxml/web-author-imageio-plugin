@@ -143,11 +143,6 @@
       <artifactId>imageio-clippath</artifactId>
       <version>${monkeys.version}</version>
     </dependency>
-    <dependency>
-      <groupId>com.twelvemonkeys.imageio</groupId>
-      <artifactId>imageio-batik</artifactId>
-      <version>${monkeys.version}</version>
-    </dependency>
   </dependencies>
   
 </project>
