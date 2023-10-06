@@ -79,11 +79,6 @@
         <version>2.0.12</version>
     </dependency>
     <dependency>
-        <groupId>com.oxygenxml</groupId>
-        <artifactId>oxygen-jai-tiff</artifactId>
-        <version>${project.version}</version>
-    </dependency>
-    <dependency>
       <groupId>com.twelvemonkeys.imageio</groupId>
       <artifactId>imageio-thumbsdb</artifactId>
       <version>${monkeys.version}</version>
