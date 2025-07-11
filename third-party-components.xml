@@ -941,9 +941,9 @@ The Apache Software Foundation (http://www.apache.org/).
             <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </component>
-    <component id="org.apache.pdfbox:fontbox:2.0.12" draft="false" product="webapp">
+    <component id="org.apache.pdfbox:fontbox:3.0.3" draft="false" product="webapp">
         <name>Apache FontBox</name>
-        <version>2.0.12</version>
+        <version>3.0.3</version>
         <project-info>
             <about>The Apache FontBox library is an open source Java tool to obtain low level information
     from font files. FontBox is a subproject of Apache PDFBox.</about>
@@ -1007,9 +1007,36 @@ END OF TERMS AND CONDITIONS</content>
             <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
         </license>
     </component>
-    <component id="org.apache.pdfbox:pdfbox:2.0.12" draft="false" product="webapp">
+    <component id="org.apache.pdfbox:pdfbox-io:3.0.3" draft="false" product="webapp">
+        <name>Apache PDFBox I/O</name>
+        <version>3.0.3</version>
+        <project-info>
+            <about>The Apache PDFBox I/O library provides input/output utilities for PDF processing.</about>
+            <licensor>The Apache Software Foundation</licensor>
+            <start-year>2002</start-year>
+            <project-url>https://pdfbox.apache.org/</project-url>
+        </project-info>
+        <license>
+            <type>Apache License, Version 2.0</type>
+            <content>Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.</content>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </component>
+    <component id="org.apache.pdfbox:pdfbox:3.0.3" draft="false" product="webapp">
         <name>Apache PDFBox</name>
-        <version>2.0.12</version>
+        <version>3.0.3</version>
         <project-info>
             <about>The Apache PDFBox library is an open source Java tool for working with PDF documents.</about>
             <licensor>The Apache Software Foundation</licensor>
