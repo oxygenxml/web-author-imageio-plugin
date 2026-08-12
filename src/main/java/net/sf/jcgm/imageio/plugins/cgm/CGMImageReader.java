@@ -179,6 +179,13 @@ class CGMImageReader extends ImageReader {
 			}
 		}
 
+		// START OXYGEN PATCH
+		if (this.size.width > 1000) {
+			double scale = this.size.width / 1000.;
+			this.size.width = (int) (this.size.width / scale);
+			this.size.height = (int) (this.size.height / scale);
+		}
+		// END OXYGEN PATCH
 		BufferedImage destination = getDestination(param, getImageTypes(0), this.size.width, this.size.height);
 		CGMDisplay display = new CGMDisplay(this.cgm);
 		Graphics graphics = destination.getGraphics();
