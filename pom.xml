@@ -224,13 +224,13 @@
       <groupId>net.sf.jcgm</groupId>
       <artifactId>jcgm-core</artifactId>
       <version>2.1.1</version>
-      <scope>provided</scope>
+      <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>net.sf.jcgm</groupId>
       <artifactId>jcgm-image</artifactId>
       <version>${jcgm.image.version}</version>
-      <scope>provided</scope>
+      <optional>true</optional>
     </dependency>
   </dependencies>
   
