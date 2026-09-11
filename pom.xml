@@ -23,6 +23,7 @@
 
   <properties>
     <monkeys.version>3.8.2</monkeys.version>
+    <jcgm.image.version>0.2.2</jcgm.image.version>
     <target.jre.version>21</target.jre.version>
   </properties>
 
@@ -66,8 +67,8 @@
             <configuration>
               <target>
                 <mkdir dir="${project.build.directory}/lib"/>
-                <zip destfile="${project.build.directory}/lib/jcgm-image-0.2.2.jar">
-                  <zipfileset src="${basedir}/lib/jcgm-image-0.2.2.jar"
+                <zip destfile="${project.build.directory}/lib/jcgm-image-${jcgm.image.version}.jar">
+                  <zipfileset src="${basedir}/lib/jcgm-image-${jcgm.image.version}.jar"
                     excludes="net/sf/jcgm/imageio/plugins/cgm/CGMImageReader.class"/>
                 </zip>
               </target>
@@ -177,7 +178,7 @@
     <dependency>
       <groupId>net.sf.jcgm</groupId>
       <artifactId>jcgm-image</artifactId>
-      <version>0.2.2</version>
+      <version>${jcgm.image.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
