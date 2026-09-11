@@ -23,10 +23,54 @@
 
   <properties>
     <monkeys.version>3.8.2</monkeys.version>
+    <jcgm.image.version>0.2.2</jcgm.image.version>
   </properties>
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-dependencies-jre-version-compatible-with-our-compile-target-jre-version</id>
+            <configuration>
+              <rules>
+                <!--
+                  Compiled for Java 17, but jcgm-image is published for Java 21. That is the
+                  ceiling, see the antrun dedupe below that lowers it before shipping, so a
+                  dependency above it must fail the build.
+                -->
+                <enforceBytecodeVersion>
+                  <maxJdkVersion>21</maxJdkVersion>
+                  <ignoredScopes>
+                    <ignoreScope>test</ignoreScope>
+                  </ignoredScopes>
+                </enforceBytecodeVersion>
+              </rules>
+            </configuration>
+          </execution>
+          <execution>
+            <id>enforce-build-jdk-version</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireJavaVersion>
+                  <!--
+                    Compiling the vendored CGMImageReader reads jcgm-image, which is compiled
+                    with JDK 21, so a JDK 17 javac cannot read it. The output stays Java 17,
+                    it comes from maven.compiler.release in the superpom.
+                  -->
+                  <version>[21,)</version>
+                  <message>The ImageIO plugin must be built with JDK 21 or newer.</message>
+                </requireJavaVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
@@ -47,6 +91,38 @@
             <configuration>
               <outputDirectory>${project.build.directory}/global</outputDirectory>
               <includeGroupIds>org.apache.pdfbox</includeGroupIds>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <!-- 
+            Strip CGMImageReader class so our patched version is the only one on the classpath,
+            and lower the class file version so the JAR can be loaded on Java 17
+          -->
+          <execution>
+            <id>dedupe-cgm-image-reader</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <mkdir dir="${project.build.directory}/build-tools"/>
+                <javac srcdir="${basedir}/build-tools" destdir="${project.build.directory}/build-tools"
+                  includeantruntime="false"/>
+                <java classname="ClassFileDowngrader" classpath="${project.build.directory}/build-tools"
+                  fork="true" failonerror="true">
+                  <arg value="${basedir}/lib/jcgm-image-${jcgm.image.version}.jar"/>
+                  <arg value="${project.build.directory}/lib/jcgm-image-${jcgm.image.version}.jar"/>
+                  <arg value="61"/>
+                  <arg value="65"/>
+                  <arg value="net/sf/jcgm/imageio/plugins/cgm/CGMImageReader.class"/>
+                </java>
+              </target>
             </configuration>
           </execution>
         </executions>
@@ -143,6 +219,18 @@
       <groupId>com.twelvemonkeys.imageio</groupId>
       <artifactId>imageio-clippath</artifactId>
       <version>${monkeys.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.jcgm</groupId>
+      <artifactId>jcgm-core</artifactId>
+      <version>2.1.1</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.jcgm</groupId>
+      <artifactId>jcgm-image</artifactId>
+      <version>${jcgm.image.version}</version>
+      <optional>true</optional>
     </dependency>
   </dependencies>
   
