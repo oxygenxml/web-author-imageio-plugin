@@ -57,7 +57,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
         <executions>
-          <!-- strip CGMImageReader class so our patched version is the only one on the classpath -->
+          <!-- 
+            Strip CGMImageReader class so our patched version is the only one on the classpath,
+            and lower the class file version so the JAR can be loaded on Java 17
+          -->
           <execution>
             <id>dedupe-cgm-image-reader</id>
             <phase>prepare-package</phase>
@@ -66,11 +69,17 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="${project.build.directory}/lib"/>
-                <zip destfile="${project.build.directory}/lib/jcgm-image-${jcgm.image.version}.jar">
-                  <zipfileset src="${basedir}/lib/jcgm-image-${jcgm.image.version}.jar"
-                    excludes="net/sf/jcgm/imageio/plugins/cgm/CGMImageReader.class"/>
-                </zip>
+                <mkdir dir="${project.build.directory}/build-tools"/>
+                <javac srcdir="${basedir}/build-tools" destdir="${project.build.directory}/build-tools"
+                  includeantruntime="false"/>
+                <java classname="ClassFileDowngrader" classpath="${project.build.directory}/build-tools"
+                  fork="true" failonerror="true">
+                  <arg value="${basedir}/lib/jcgm-image-${jcgm.image.version}.jar"/>
+                  <arg value="${project.build.directory}/lib/jcgm-image-${jcgm.image.version}.jar"/>
+                  <arg value="61"/>
+                  <arg value="65"/>
+                  <arg value="net/sf/jcgm/imageio/plugins/cgm/CGMImageReader.class"/>
+                </java>
               </target>
             </configuration>
           </execution>
