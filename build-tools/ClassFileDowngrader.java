@@ -16,7 +16,7 @@ import java.util.zip.ZipOutputStream;
  * CGM reader SPI fails with UnsupportedClassVersionError and no CGM image is rendered.
  *
  * <p>The library itself uses no API or language feature newer than Java 17, so lowering the
- * version stamp is enough. This is a stopgap until jcgm-image is published compiled for 17.
+ * version stamp is enough.
  *
  * <p>Usage: {@code ClassFileDowngrader <in.jar> <out.jar> <targetMajor> <maxAcceptedMajor>}
  */
