@@ -55,6 +55,10 @@
       <includes>
         <include>**/*</include>
       </includes>
+      <excludes>
+        <!-- use the de-duplicated copy from target/lib instead -->
+        <exclude>jcgm-image-*.jar</exclude>
+      </excludes>
     </fileSet>
   </fileSets>
 </assembly>
